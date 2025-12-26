@@ -1470,3 +1470,1057 @@
 {
   "error": "request to https://kamikuralk.online/api/get_pending_jobs.php failed, reason: read ECONNRESET"
 }
+[2025-12-25T09:50:08.448Z] [INFO] Print server starting...
+[2025-12-25T09:50:08.450Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-25T09:50:08.451Z] [INFO] Poll interval: 2000ms
+[2025-12-25T09:50:08.452Z] [INFO] Retry interval: 30000ms
+[2025-12-25T09:50:08.453Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-25T09:50:30.802Z] [INFO] Found 1 pending job(s)
+[2025-12-25T09:50:30.802Z] [INFO] Found 1 pending job(s)
+[2025-12-25T09:50:30.803Z] [INFO] Processing job 20 (receipt) for Customer Receipt
+[2025-12-25T09:50:31.909Z] [INFO] Connecting to network printer: 192.168.123.101:9100
+[2025-12-25T09:50:32.230Z] [INFO] ✓ Job 20 printed successfully
+[2025-12-25T09:50:40.842Z] [INFO] Found 1 pending job(s)
+[2025-12-25T09:50:40.843Z] [INFO] Found 1 pending job(s)
+[2025-12-25T09:50:40.843Z] [INFO] Processing job 19 (customer_bill) for Customer Receipt
+[2025-12-25T09:50:41.660Z] [INFO] 📄 Printing customer bill for Sale #25
+[2025-12-25T09:50:41.661Z] [INFO] Connecting to network printer: 192.168.123.101:9100
+[2025-12-25T09:50:42.072Z] [INFO] ✓ Job 19 printed successfully
+[2025-12-25T09:51:28.697Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:51:29.483Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:51:34.697Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:51:38.724Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:51:38.742Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:51:40.719Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:51:40.752Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:51:42.726Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:51:42.760Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:51:44.733Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:51:46.749Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:51:53.577Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:51:58.044Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T09:55:13.756Z] [INFO] Found 1 pending job(s)
+[2025-12-25T09:55:13.756Z] [INFO] Found 1 pending job(s)
+[2025-12-25T09:55:13.757Z] [INFO] Processing job 21 (receipt) for Customer Receipt
+[2025-12-25T09:55:14.588Z] [INFO] Connecting to network printer: 192.168.123.101:9100
+[2025-12-25T09:55:14.875Z] [INFO] ✓ Job 21 printed successfully
+[2025-12-25T10:00:18.573Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-25T10:03:01.338Z] [INFO] Found 1 pending job(s)
+[2025-12-25T10:03:01.339Z] [INFO] Found 1 pending job(s)
+[2025-12-25T10:03:01.340Z] [INFO] Processing job 22 (receipt) for Customer Receipt
+[2025-12-25T10:03:02.204Z] [INFO] Connecting to network printer: 192.168.123.101:9100
+[2025-12-25T10:03:02.535Z] [INFO] ✓ Job 22 printed successfully
+[2025-12-25T10:04:22.258Z] [INFO] Print server shutting down...
+[2025-12-25T10:05:20.506Z] [INFO] Print server starting...
+[2025-12-25T10:05:20.509Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-25T10:05:20.509Z] [INFO] Poll interval: 2000ms
+[2025-12-25T10:05:20.511Z] [INFO] Retry interval: 30000ms
+[2025-12-25T10:05:20.513Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-25T10:05:58.950Z] [INFO] Found 1 pending job(s)
+[2025-12-25T10:05:58.951Z] [INFO] Found 1 pending job(s)
+[2025-12-25T10:05:58.952Z] [INFO] Processing job 23 (receipt) for Customer Receipt
+[2025-12-25T10:06:00.137Z] [INFO] Connecting to network printer: 192.168.123.101:9100
+[2025-12-25T10:06:00.456Z] [INFO] ✓ Job 23 printed successfully
+[2025-12-25T10:11:13.993Z] [INFO] Print server shutting down...
+[2025-12-25T10:11:21.575Z] [INFO] Print server starting...
+[2025-12-25T10:11:21.578Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-25T10:11:21.580Z] [INFO] Poll interval: 2000ms
+[2025-12-25T10:11:21.583Z] [INFO] Retry interval: 30000ms
+[2025-12-25T10:11:21.585Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-25T10:11:51.976Z] [INFO] Found 1 pending job(s)
+[2025-12-25T10:11:51.977Z] [INFO] Found 1 pending job(s)
+[2025-12-25T10:11:51.978Z] [INFO] Processing job 24 (receipt) for Customer Receipt
+[2025-12-25T10:11:53.112Z] [INFO] Connecting to network printer: 192.168.123.101:9100
+[2025-12-25T10:11:53.433Z] [INFO] ✓ Job 24 printed successfully
+[2025-12-26T06:09:53.780Z] [INFO] Print server starting...
+[2025-12-26T06:09:53.784Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-26T06:09:53.786Z] [INFO] Poll interval: 2000ms
+[2025-12-26T06:09:53.788Z] [INFO] Retry interval: 30000ms
+[2025-12-26T06:09:53.789Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-26T06:11:16.704Z] [INFO] Print server starting...
+[2025-12-26T06:11:16.706Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-26T06:11:16.707Z] [INFO] Poll interval: 2000ms
+[2025-12-26T06:11:16.708Z] [INFO] Retry interval: 30000ms
+[2025-12-26T06:11:16.709Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-26T06:11:29.005Z] [INFO] Print server shutting down...
+[2025-12-26T06:13:27.593Z] [INFO] Print server starting...
+[2025-12-26T06:13:27.596Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-26T06:13:27.596Z] [INFO] Poll interval: 2000ms
+[2025-12-26T06:13:27.597Z] [INFO] Retry interval: 30000ms
+[2025-12-26T06:13:27.601Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-26T06:13:28.541Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:13:28.541Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:13:28.542Z] [INFO] Processing job 25 (receipt) for Customer Receipt
+[2025-12-26T06:13:29.870Z] [INFO] Connecting to network printer: 192.168.1.10:9100
+[2025-12-26T06:13:39.885Z] [WARN] Print attempt 1 failed for job 25, retrying...
+{
+  "error": "Print timeout"
+}
+[2025-12-26T06:13:42.899Z] [INFO] Connecting to network printer: 192.168.1.10:9100
+[2025-12-26T06:13:52.905Z] [WARN] Print attempt 2 failed for job 25, retrying...
+{
+  "error": "Print timeout"
+}
+[2025-12-26T06:13:55.910Z] [INFO] Connecting to network printer: 192.168.1.10:9100
+[2025-12-26T06:14:06.190Z] [ERROR] ✗ Job 25 failed
+{
+  "error": "Print timeout"
+}
+[2025-12-26T06:15:38.268Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:15:40.270Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:15:42.271Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:15:44.273Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:15:46.274Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:15:48.278Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:15:50.281Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:15:52.281Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:15:54.282Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:15:56.286Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:15:58.286Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:00.300Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:02.320Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:04.317Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:06.321Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:08.325Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:10.333Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:12.347Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:14.346Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:16.347Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:18.352Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:20.351Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:22.363Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:24.366Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:26.369Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:28.381Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:30.383Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:32.383Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:34.393Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:36.390Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:38.404Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:40.415Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:42.419Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:44.420Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:46.422Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:48.425Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:50.427Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:52.440Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:54.444Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:56.447Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:16:58.459Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:00.459Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:02.463Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:04.466Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:06.468Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:08.486Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:10.487Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:12.492Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:14.494Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:16.498Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:18.505Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:20.517Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:22.530Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:24.532Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:26.535Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:28.549Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:30.550Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:32.552Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:34.565Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:36.562Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:38.563Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:40.566Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:42.580Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:44.579Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:46.584Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:48.594Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:50.595Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:52.605Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:54.609Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:56.610Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:17:58.623Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:00.627Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:02.631Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:04.642Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:06.647Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:08.669Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:10.675Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:12.688Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:14.690Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:16.693Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:18.705Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:20.707Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:22.711Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:24.724Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:26.729Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:28.740Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:30.751Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:32.752Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:34.756Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:36.755Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:38.764Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:40.767Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:42.775Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:44.776Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:46.781Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:48.789Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:50.789Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:52.791Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:54.806Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:56.800Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:18:58.814Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:00.817Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:02.819Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:04.844Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:06.847Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:08.866Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:10.867Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:12.871Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:14.875Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:16.878Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:18.892Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:20.894Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:22.901Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:24.900Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:26.906Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:28.910Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:30.914Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:32.927Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:34.928Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:36.930Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:38.936Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:40.935Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:42.935Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:44.939Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:46.953Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:48.969Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:50.971Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:52.985Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:54.989Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:56.985Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:19:58.987Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:00.990Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:03.005Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:05.010Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:07.010Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:09.025Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:11.025Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:13.025Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:15.029Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:17.042Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:19.045Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:21.049Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:23.065Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:25.068Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:27.071Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:29.081Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:31.094Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:33.102Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:35.114Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:37.127Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:39.133Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:41.141Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:43.141Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:45.140Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:47.155Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:49.160Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:51.169Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:53.173Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:55.170Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:57.171Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:20:59.175Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:01.176Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:03.189Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:05.193Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:07.197Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:09.211Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:11.209Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:13.225Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:15.226Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:17.239Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:19.243Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:21.256Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:23.252Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:25.252Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:27.270Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:29.272Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:31.270Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:33.283Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:35.297Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:37.311Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:39.312Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:41.314Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:43.317Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:45.315Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:47.328Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:49.334Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:51.339Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:53.353Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:55.355Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:57.355Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:21:59.356Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:01.359Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:03.361Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:05.365Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:07.364Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:09.373Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:11.378Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:13.381Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:15.381Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:17.395Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:19.398Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:21.399Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:23.413Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:25.415Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:27.430Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:29.434Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:31.433Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:33.433Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:35.437Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:37.445Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:39.458Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:41.463Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:43.470Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:45.475Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T06:22:45.556Z] [INFO] Print server shutting down...
+[2025-12-26T06:42:06.513Z] [INFO] Print server starting...
+[2025-12-26T06:42:06.516Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-26T06:42:06.517Z] [INFO] Poll interval: 2000ms
+[2025-12-26T06:42:06.518Z] [INFO] Retry interval: 30000ms
+[2025-12-26T06:42:06.519Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-26T06:42:07.521Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:42:07.522Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:42:07.523Z] [INFO] Processing job 25 (receipt) for Customer Receipt
+[2025-12-26T06:42:08.787Z] [INFO] Connecting to network printer: 192.168.123.100:9100
+[2025-12-26T06:42:09.110Z] [INFO] ✓ Job 25 printed successfully
+[2025-12-26T06:43:05.271Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:43:05.272Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:43:05.273Z] [INFO] Processing job 26 (receipt) for Customer Receipt
+[2025-12-26T06:43:06.096Z] [INFO] Connecting to network printer: 192.168.123.100:9100
+[2025-12-26T06:43:06.369Z] [INFO] ✓ Job 26 printed successfully
+[2025-12-26T06:43:59.486Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:43:59.486Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:43:59.488Z] [INFO] Processing job 27 (receipt) for Customer Receipt
+[2025-12-26T06:44:00.282Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T06:44:10.287Z] [WARN] Print attempt 1 failed for job 27, retrying...
+{
+  "error": "Print timeout"
+}
+[2025-12-26T06:44:13.290Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T06:44:23.294Z] [WARN] Print attempt 2 failed for job 27, retrying...
+{
+  "error": "Print timeout"
+}
+[2025-12-26T06:44:26.309Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T06:44:32.399Z] [ERROR] ✗ Job 27 failed
+{
+  "error": "connect ECONNABORTED 192.168.123.70:9100"
+}
+[2025-12-26T06:44:59.740Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:44:59.741Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:44:59.741Z] [INFO] Processing job 27 (receipt) for Customer Receipt
+[2025-12-26T06:45:00.602Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T06:45:00.869Z] [INFO] ✓ Job 27 printed successfully
+[2025-12-26T06:53:25.398Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:53:25.399Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:53:25.400Z] [INFO] Processing job 28 (receipt) for Customer Receipt
+[2025-12-26T06:53:26.217Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T06:53:26.491Z] [INFO] ✓ Job 28 printed successfully
+[2025-12-26T06:53:52.699Z] [INFO] Print server shutting down...
+[2025-12-26T06:54:05.682Z] [INFO] Print server starting...
+[2025-12-26T06:54:05.685Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-26T06:54:05.687Z] [INFO] Poll interval: 2000ms
+[2025-12-26T06:54:05.688Z] [INFO] Retry interval: 30000ms
+[2025-12-26T06:54:05.692Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-26T06:54:11.991Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:54:11.991Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:54:11.993Z] [INFO] Processing job 29 (receipt) for Customer Receipt
+[2025-12-26T06:54:13.195Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T06:54:13.532Z] [INFO] ✓ Job 29 printed successfully
+[2025-12-26T06:58:12.913Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:58:12.914Z] [INFO] Found 1 pending job(s)
+[2025-12-26T06:58:12.915Z] [INFO] Processing job 30 (kot) for Kitchen Printer
+[2025-12-26T06:58:13.733Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T06:58:14.035Z] [INFO] ✓ Job 30 printed successfully

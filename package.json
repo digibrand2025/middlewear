@@ -7,12 +7,10 @@
     "start": "node print-server.js"
   },
   "dependencies": {
-    "escpos": "^2.5.2",
-    "escpos-network": "^3.0.0-alpha.5",
-    "escpos-usb": "^3.0.0-alpha.4",
-    "punycode": "^2.3.1"
+    "node-fetch": "^2.7.0",
+    "escpos": "^3.0.0-alpha.6",
+    "escpos-network": "^3.0.0-alpha.6"
   },
   "author": "Kamikura Restaurant",
-  "license": "ISC",
-  "keywords": []
+  "license": "ISC"
 }

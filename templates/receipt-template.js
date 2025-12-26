@@ -1,57 +1,75 @@
 module.exports = {
-    generate: function(orderData) {
+    generate: function(billData) {
         return function(printer) {
             // Header
             printer
                 .font('a')
                 .align('ct')
                 .style('b')
+                .size(1, 1)
+                .text('JAPANESE RESTAURANT')
                 .size(2, 2)
-                .text('KAMIKURA RESTAURANT')
+                .text('KAMIKURA')
                 .size(1, 1)
                 .style('normal')
-                .text('123 Main St, Negombo')
-                .text('Tel: 031-1234567')
+                .text('1A Park way, Park Road Colombo 5')
+                .text('0112 554 555')
+                .text('')
+                .style('b')
+                .text('Customer Bill')
+                .style('normal')
                 .text('================================')
                 .align('lt');
             
             // Invoice info
             printer
-                .text(`Invoice: ${orderData.invoice_number || 'N/A'}`)
-                .text(`Date: ${new Date().toLocaleDateString()}`)
-                .text(`Time: ${new Date().toLocaleTimeString()}`)
-                .text(`Server: ${orderData.server}`)
-                .text(`Table: ${orderData.table}`)
+                .text(`Invoice No  : ${billData.bill_number}`)
+                .text(`Date        : ${billData.date} ${billData.time}`)
+                .text(`Cashier     : ${billData.cashier}`)
+                .text(`Steward     : ${billData.steward}`)
+                .text(`Table       : ${billData.table}`)
                 .text('================================')
                 .text('');
             
             // Items
-            printer.text('ITEMS:');
-            orderData.items.forEach(item => {
-                const itemTotal = (item.quantity * item.unit_price).toFixed(2);
+            billData.items.forEach(item => {
                 printer
-                    .text(`${item.quantity}x ${item.item_name}`)
-                    .text(`      Rs. ${itemTotal}`)
+                    .text(`${item.name}`)
+                    .text(`${item.quantity}.00    x    ${item.unit_price}        ${item.total}`)
                     .text('');
             });
             
+            // Separator
+            printer.text('================================');
+            
             // Totals
+            const formatRightAlign = (label, value) => {
+                const line = `${label}${value}`;
+                const padding = 32 - line.length;
+                return `${label}${' '.repeat(Math.max(0, padding))}${value}`;
+            };
+            
             printer
-                .text('--------------------------------')
-                .text(`Subtotal:        Rs. ${orderData.subtotal || '0.00'}`)
-                .text(`Service (10%):   Rs. ${orderData.service_charge || '0.00'}`)
-                .text('--------------------------------')
+                .text(formatRightAlign('Gross Amount      : ', billData.gross_amount))
+                .text(formatRightAlign('Bill Discount     : ', billData.bill_discount))
+                .text(formatRightAlign('Service Charge    : ', billData.service_charge))
+                .text(formatRightAlign('Other             : ', billData.other))
+                .text('================================')
+                .text('')
                 .style('b')
                 .size(1, 2)
-                .text(`TOTAL:           Rs. ${orderData.total || '0.00'}`)
+                .text(formatRightAlign('Net Total         : ', billData.net_total))
                 .size(1, 1)
                 .style('normal')
                 .text('================================')
                 .text('')
+                .text(`Item Count        :    ${billData.item_count}`)
+                .text('')
+                .text('')
+                .text('')
                 .align('ct')
-                .text('Thank you for dining with us!')
-                .text('www.kamikura.lk')
-                .text('================================')
+                .text('Software By Digibrand')
+                .text('')
                 .text('')
                 .cut();
         };
