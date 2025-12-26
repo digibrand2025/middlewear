@@ -1,18 +1,19 @@
 module.exports = {
     generate: function(billData) {
         return function(printer) {
-            // CONSTANTS FOR 80mm PAPER
-            const WIDTH = 48; // Standard 80mm paper character width (Font A)
+            const WIDTH = 48;
             const SEPARATOR = '='.repeat(WIDTH);
             const THIN_SEPARATOR = '-'.repeat(WIDTH);
 
-            // Helper to align text: "Label ........... Value"
             const formatLine = (label, value) => {
                 const labelStr = String(label);
                 const valueStr = String(value);
                 const spacing = Math.max(0, WIDTH - labelStr.length - valueStr.length);
                 return labelStr + ' '.repeat(spacing) + valueStr;
             };
+
+            // Determine if this is post-payment (has payment info)
+            const isPostPayment = billData.payment_method || billData.amount_tendered;
 
             // Header
             printer
@@ -27,19 +28,32 @@ module.exports = {
                 .style('normal')
                 .text('1A Park way, Park Road Colombo 5')
                 .text('0112 554 555')
-                .text('')
-                .style('b')
-                .text('Customer Bill')
-                .style('normal')
+                .text('');
+
+            // Title (different for pre/post payment)
+            if (isPostPayment) {
+                printer
+                    .style('b')
+                    .text('PAID RECEIPT')
+                    .style('normal');
+            } else {
+                printer
+                    .style('b')
+                    .text('Customer Bill')
+                    .style('normal');
+            }
+
+            printer
                 .text(SEPARATOR)
                 .align('lt');
             
-            // Invoice info (formatted to use width)
+            // Invoice info
             printer
-                .text(formatLine('Invoice No :', billData.bill_number))
-                .text(formatLine('Date       :', `${billData.date} ${billData.time}`))
+                .text(formatLine('Invoice No :', billData.bill_number || 'DRAFT'))
+                .text(formatLine('Date       :', billData.date))
+                .text(formatLine('Time       :', billData.time || ''))
                 .text(formatLine('Cashier    :', billData.cashier))
-                .text(formatLine('Steward    :', billData.steward))
+                .text(formatLine('Steward    :', billData.steward || billData.cashier))
                 .text(formatLine('Table      :', billData.table))
                 .text(SEPARATOR)
                 .text('');
@@ -47,25 +61,18 @@ module.exports = {
             // Items Header
             printer
                 .style('b')
-                .text(formatLine('ITEM', 'TOTAL')) // Column headers
+                .text(formatLine('ITEM', 'TOTAL'))
                 .style('normal')
                 .text(THIN_SEPARATOR);
 
             // Items Loop
             billData.items.forEach(item => {
-                // Row 1: Item Name
                 printer.align('lt').text(item.name);
-                
-                // Row 2: Qty x Price (Left) ..... Total (Right)
-                const calculation = `${item.quantity}.00 x ${item.unit_price}`;
+                const calculation = `${item.quantity} x ${item.unit_price}`;
                 const line = formatLine(`  ${calculation}`, item.total);
-                
-                printer
-                    .text(line)
-                    .text(''); // Small spacing between items
+                printer.text(line).text('');
             });
             
-            // Separator
             printer.text(SEPARATOR);
             
             // Totals
@@ -78,22 +85,51 @@ module.exports = {
                 .text(SEPARATOR)
                 .text('');
             
-            // Net Total (Larger Font)
+            // Net Total
             printer
                 .style('b')
-                .size(1, 2) // Taller font for emphasis
+                .size(1, 2)
                 .text(formatLine('Net Total      :', billData.net_total))
-                .size(1, 1) // Reset size
+                .size(1, 1)
                 .style('normal')
-                .text(SEPARATOR)
-                .text('')
-                .text(formatLine('Item Count :', billData.item_count));
+                .text(SEPARATOR);
+
+            // === POST-PAYMENT ONLY SECTION ===
+            if (isPostPayment) {
+                printer
+                    .text('')
+                    .style('b')
+                    .text('PAYMENT DETAILS')
+                    .style('normal')
+                    .text(THIN_SEPARATOR)
+                    .text(formatLine('Payment Method :', billData.payment_method))
+                    .text(formatLine('Amount Tendered:', billData.amount_tendered))
+                    .text(formatLine('Change         :', billData.change_given))
+                    .text(SEPARATOR);
+            }
 
             // Footer
             printer
                 .text('')
+                .text(formatLine('Item Count :', billData.item_count))
                 .text('')
-                .align('ct')
+                .text('')
+                .align('ct');
+
+            // Post-payment shows PAID stamp
+            if (isPostPayment) {
+                printer
+                    .style('b')
+                    .size(2, 2)
+                    .text('PAID')
+                    .size(1, 1)
+                    .style('normal')
+                    .text('');
+            }
+
+            printer
+                .text('Thank you!')
+                .text('')
                 .text('Software By Digibrand')
                 .text('')
                 .text('')
