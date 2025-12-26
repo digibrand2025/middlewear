@@ -1,6 +1,19 @@
 module.exports = {
     generate: function(billData) {
         return function(printer) {
+            // Helper function to pad/align text
+            const leftRight = (left, right, width = 32) => {
+                const rightStr = String(right);
+                const leftStr = String(left);
+                const spaces = width - leftStr.length - rightStr.length;
+                return leftStr + ' '.repeat(Math.max(1, spaces)) + rightStr;
+            };
+            
+            const rightAlign = (text, width = 32) => {
+                const textStr = String(text);
+                return ' '.repeat(Math.max(0, width - textStr.length)) + textStr;
+            };
+            
             // Header
             printer
                 .font('a')
@@ -12,113 +25,69 @@ module.exports = {
                 .text('KAMIKURA')
                 .size(1, 1)
                 .style('normal')
-                .text('1A Park way, Park Road Colombo 5')
+                .text('1A Park way, Park Road')
+                .text('Colombo 5')
                 .text('0112 554 555')
                 .text('')
                 .style('b')
                 .text('REPRINT INVOICE')
                 .style('normal')
-                .text('------------------------------------------------')
+                .text('--------------------------------')
                 .align('lt');
             
-            // Invoice info - use table format for better alignment
+            // Invoice info
             printer
-                .tableCustom([
-                    { text: "Invoice No", align: "LEFT", width: 0.4 },
-                    { text: ":", align: "CENTER", width: 0.1 },
-                    { text: billData.bill_number, align: "LEFT", width: 0.5 }
-                ])
-                .tableCustom([
-                    { text: "Date", align: "LEFT", width: 0.4 },
-                    { text: ":", align: "CENTER", width: 0.1 },
-                    { text: `${billData.date} ${billData.time}`, align: "LEFT", width: 0.5 }
-                ])
-                .tableCustom([
-                    { text: "Cashier", align: "LEFT", width: 0.4 },
-                    { text: ":", align: "CENTER", width: 0.1 },
-                    { text: billData.cashier, align: "LEFT", width: 0.5 }
-                ])
-                .tableCustom([
-                    { text: "Steward", align: "LEFT", width: 0.4 },
-                    { text: ":", align: "CENTER", width: 0.1 },
-                    { text: billData.steward, align: "LEFT", width: 0.5 }
-                ])
-                .tableCustom([
-                    { text: "Table", align: "LEFT", width: 0.4 },
-                    { text: ":", align: "CENTER", width: 0.1 },
-                    { text: billData.table, align: "LEFT", width: 0.5 }
-                ])
-                .text('------------------------------------------------')
+                .text(leftRight('Invoice No:', billData.bill_number))
+                .text(leftRight('Date:', `${billData.date} ${billData.time}`))
+                .text(leftRight('Cashier:', billData.cashier))
+                .text(leftRight('Steward:', billData.steward))
+                .text(leftRight('Table:', billData.table))
+                .text('--------------------------------')
                 .text('');
             
             // Items header
-            printer
-                .tableCustom([
-                    { text: "Item", align: "LEFT", width: 0.50 },
-                    { text: "Qty", align: "CENTER", width: 0.15 },
-                    { text: "Price", align: "RIGHT", width: 0.17 },
-                    { text: "Total", align: "RIGHT", width: 0.18 }
-                ])
-                .text('------------------------------------------------');
+            printer.text('Item                  Qty  Price');
+            printer.text('--------------------------------');
             
-            // Items - using table for proper alignment
+            // Items
             billData.items.forEach(item => {
-                printer
-                    .tableCustom([
-                        { text: item.name, align: "LEFT", width: 0.50 },
-                        { text: item.quantity.toString(), align: "CENTER", width: 0.15 },
-                        { text: parseFloat(item.unit_price).toFixed(2), align: "RIGHT", width: 0.17 },
-                        { text: parseFloat(item.total).toFixed(2), align: "RIGHT", width: 0.18 }
-                    ]);
+                // Item name (truncate if too long)
+                const itemName = item.name.length > 24 ? 
+                    item.name.substring(0, 21) + '...' : 
+                    item.name;
+                printer.text(itemName);
+                
+                // Quantity, price and total on second line
+                const qtyStr = `${parseFloat(item.quantity).toFixed(2)}`;
+                const priceStr = `${parseFloat(item.unit_price).toFixed(2)}`;
+                const totalStr = `${parseFloat(item.total).toFixed(2)}`;
+                
+                const qtyPrice = leftRight(`  ${qtyStr} x ${priceStr}`, totalStr);
+                printer.text(qtyPrice);
             });
             
             // Separator
-            printer.text('------------------------------------------------');
+            printer.text('--------------------------------');
             
-            // Totals - right aligned amounts
+            // Totals
             printer
-                .tableCustom([
-                    { text: "Gross Amount", align: "LEFT", width: 0.65 },
-                    { text: parseFloat(billData.gross_amount).toFixed(2), align: "RIGHT", width: 0.35 }
-                ])
-                .tableCustom([
-                    { text: "Bill Discount", align: "LEFT", width: 0.65 },
-                    { text: parseFloat(billData.bill_discount).toFixed(2), align: "RIGHT", width: 0.35 }
-                ])
-                .tableCustom([
-                    { text: "Service Charge", align: "LEFT", width: 0.65 },
-                    { text: parseFloat(billData.service_charge).toFixed(2), align: "RIGHT", width: 0.35 }
-                ])
-                .tableCustom([
-                    { text: "Other", align: "LEFT", width: 0.65 },
-                    { text: parseFloat(billData.other).toFixed(2), align: "RIGHT", width: 0.35 }
-                ])
-                .text('------------------------------------------------')
+                .text(leftRight('Gross Amount:', parseFloat(billData.gross_amount).toFixed(2)))
+                .text(leftRight('Bill Discount:', parseFloat(billData.bill_discount).toFixed(2)))
+                .text(leftRight('Service Charge:', parseFloat(billData.service_charge).toFixed(2)))
+                .text(leftRight('Other:', parseFloat(billData.other).toFixed(2)))
+                .text('--------------------------------')
                 .text('')
                 .style('b')
-                .size(1, 2);
-            
-            // Net total - larger and bold
-            printer
-                .tableCustom([
-                    { text: "Net Total", align: "LEFT", width: 0.50, style: 'B' },
-                    { text: parseFloat(billData.net_total).toFixed(2), align: "RIGHT", width: 0.50, style: 'B' }
-                ])
+                .size(1, 1)
+                .text(leftRight('NET TOTAL:', parseFloat(billData.net_total).toFixed(2)))
                 .size(1, 1)
                 .style('normal')
-                .text('------------------------------------------------')
-                .text('');
-            
-            // Footer info
-            printer
-                .tableCustom([
-                    { text: "Item Count", align: "LEFT", width: 0.65 },
-                    { text: billData.item_count.toString(), align: "RIGHT", width: 0.35 }
-                ])
+                .text('--------------------------------')
+                .text('')
+                .text(leftRight('Item Count:', billData.item_count))
                 .text('')
                 .text('')
                 .align('ct')
-                .text('Thank you for dining with us!')
                 .text('software by Digibrand.com')
                 .text('')
                 .text('')
