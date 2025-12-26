@@ -1,0 +1,19 @@
+{
+  "api": {
+    "base_url": "https://kamikuralk.online/api",
+    "api_key": "kamikura-print-server-2024-secret-key-change-this",
+    "poll_interval": 2000,
+    "retry_interval": 30000
+  },
+  "printing": {
+    "max_immediate_retries": 2,
+    "retry_delay": 3000,
+    "timeout": 10000,
+    "encoding": "GB18030"
+  },
+  "logging": {
+    "enabled": true,
+    "level": "info",
+    "file": "print-server.log"
+  }
+}

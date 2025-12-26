@@ -1,0 +1,16 @@
+{
+  "name": "kamikura-print-server",
+  "version": "1.0.0",
+  "description": "Print server for Kamikura Restaurant POS",
+  "main": "print-server.js",
+  "scripts": {
+    "start": "node print-server.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0",
+    "escpos": "^3.0.0-alpha.6",
+    "escpos-network": "^3.0.0-alpha.6"
+  },
+  "author": "Kamikura Restaurant",
+  "license": "ISC"
+}
