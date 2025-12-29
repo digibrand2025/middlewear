@@ -2524,3 +2524,313 @@
 [2025-12-26T06:58:12.915Z] [INFO] Processing job 30 (kot) for Kitchen Printer
 [2025-12-26T06:58:13.733Z] [INFO] Connecting to network printer: 192.168.123.70:9100
 [2025-12-26T06:58:14.035Z] [INFO] ✓ Job 30 printed successfully
+[2025-12-26T07:14:26.451Z] [INFO] Found 1 pending job(s)
+[2025-12-26T07:14:26.452Z] [INFO] Found 1 pending job(s)
+[2025-12-26T07:14:26.452Z] [INFO] Processing job 31 (receipt) for Customer Receipt
+[2025-12-26T07:14:27.269Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T07:14:27.545Z] [INFO] ✓ Job 31 printed successfully
+[2025-12-26T07:15:46.734Z] [INFO] Print server shutting down...
+[2025-12-26T07:15:52.619Z] [INFO] Print server starting...
+[2025-12-26T07:15:52.621Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-26T07:15:52.624Z] [INFO] Poll interval: 2000ms
+[2025-12-26T07:15:52.627Z] [INFO] Retry interval: 30000ms
+[2025-12-26T07:15:52.628Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-26T07:15:58.923Z] [INFO] Found 1 pending job(s)
+[2025-12-26T07:15:58.924Z] [INFO] Found 1 pending job(s)
+[2025-12-26T07:15:58.925Z] [INFO] Processing job 32 (receipt) for Customer Receipt
+[2025-12-26T07:16:00.114Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T07:16:00.485Z] [INFO] ✓ Job 32 printed successfully
+[2025-12-26T07:18:52.152Z] [INFO] Print server shutting down...
+[2025-12-26T07:19:56.312Z] [INFO] Print server starting...
+[2025-12-26T07:19:56.314Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-26T07:19:56.317Z] [INFO] Poll interval: 2000ms
+[2025-12-26T07:19:56.318Z] [INFO] Retry interval: 30000ms
+[2025-12-26T07:19:56.322Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-26T07:20:06.630Z] [INFO] Found 1 pending job(s)
+[2025-12-26T07:20:06.631Z] [INFO] Found 1 pending job(s)
+[2025-12-26T07:20:06.632Z] [INFO] Processing job 33 (receipt) for Customer Receipt
+[2025-12-26T07:20:07.769Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T07:20:08.098Z] [INFO] ✓ Job 33 printed successfully
+[2025-12-26T07:21:41.880Z] [INFO] Print server shutting down...
+[2025-12-26T07:21:47.727Z] [INFO] Print server starting...
+[2025-12-26T07:21:47.729Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-26T07:21:47.730Z] [INFO] Poll interval: 2000ms
+[2025-12-26T07:21:47.731Z] [INFO] Retry interval: 30000ms
+[2025-12-26T07:21:47.733Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-26T07:21:58.040Z] [INFO] Found 1 pending job(s)
+[2025-12-26T07:21:58.041Z] [INFO] Found 1 pending job(s)
+[2025-12-26T07:21:58.043Z] [INFO] Processing job 34 (receipt) for Customer Receipt
+[2025-12-26T07:21:59.223Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T07:21:59.553Z] [INFO] ✓ Job 34 printed successfully
+[2025-12-26T07:23:50.483Z] [INFO] Found 1 pending job(s)
+[2025-12-26T07:23:50.484Z] [INFO] Found 1 pending job(s)
+[2025-12-26T07:23:50.485Z] [INFO] Processing job 35 (receipt) for Customer Receipt
+[2025-12-26T07:23:51.342Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T07:23:51.629Z] [INFO] ✓ Job 35 printed successfully
+[2025-12-26T07:26:43.153Z] [INFO] Found 2 pending job(s)
+[2025-12-26T07:26:43.154Z] [INFO] Found 2 pending job(s)
+[2025-12-26T07:26:43.154Z] [INFO] Processing job 36 (kot) for Kitchen Printer
+[2025-12-26T07:26:44.019Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T07:26:44.307Z] [INFO] ✓ Job 36 printed successfully
+[2025-12-26T07:26:44.307Z] [INFO] Processing job 37 (bar_ticket) for Bar Printer
+[2025-12-26T07:26:44.592Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T07:26:44.871Z] [INFO] ✓ Job 37 printed successfully
+[2025-12-26T07:31:45.868Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T07:32:14.245Z] [INFO] Found 1 pending job(s)
+[2025-12-26T07:32:14.246Z] [INFO] Found 1 pending job(s)
+[2025-12-26T07:32:14.246Z] [INFO] Processing job 38 (receipt) for Customer Receipt
+[2025-12-26T07:32:15.068Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T07:32:15.346Z] [INFO] ✓ Job 38 printed successfully
+[2025-12-26T08:14:53.267Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T08:15:09.393Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:15:09.394Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:15:09.394Z] [INFO] Processing job 31 (receipt) for Customer Receipt
+[2025-12-26T08:15:10.211Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T08:15:10.487Z] [INFO] ✓ Job 31 printed successfully
+[2025-12-26T08:22:18.930Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:22:18.931Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:22:18.931Z] [INFO] Processing job 39 (receipt) for Customer Receipt
+[2025-12-26T08:22:19.770Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T08:22:20.042Z] [INFO] ✓ Job 39 printed successfully
+[2025-12-26T08:23:05.080Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:23:05.081Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:23:05.081Z] [INFO] Processing job 40 (kot) for Kitchen Printer
+[2025-12-26T08:23:05.883Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T08:23:06.154Z] [INFO] ✓ Job 40 printed successfully
+[2025-12-26T08:23:31.180Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:23:31.181Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:23:31.182Z] [INFO] Processing job 41 (kot) for Kitchen Printer
+[2025-12-26T08:23:33.225Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:23:33.226Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:23:33.227Z] [INFO] Processing job 41 (kot) for Kitchen Printer
+[2025-12-26T08:23:34.181Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T08:23:38.405Z] [ERROR] Error updating job 41 status
+{
+  "error": "fetch failed"
+}
+[2025-12-26T08:23:38.406Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T08:23:39.238Z] [INFO] ✓ Job 41 printed successfully
+[2025-12-26T08:23:39.358Z] [WARN] Failed to update job 41 status
+{
+  "success": false,
+  "error": "Job not found or already updated"
+}
+[2025-12-26T08:23:39.359Z] [INFO] ✓ Job 41 printed successfully
+[2025-12-26T08:26:50.139Z] [INFO] Print server shutting down...
+[2025-12-26T08:27:27.055Z] [INFO] Print server starting...
+[2025-12-26T08:27:27.058Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-26T08:27:27.059Z] [INFO] Poll interval: 2000ms
+[2025-12-26T08:27:27.060Z] [INFO] Retry interval: 30000ms
+[2025-12-26T08:27:27.061Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-26T08:27:53.410Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:27:53.411Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:27:53.412Z] [INFO] Processing job 42 (receipt) for Customer Receipt
+[2025-12-26T08:27:54.538Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T08:27:54.872Z] [INFO] ✓ Job 42 printed successfully
+[2025-12-26T08:30:27.593Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T08:34:24.763Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:34:24.764Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:34:24.764Z] [INFO] Processing job 43 (receipt) for Customer Receipt
+[2025-12-26T08:34:25.624Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T08:34:25.905Z] [INFO] ✓ Job 43 printed successfully
+[2025-12-26T08:50:18.235Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:50:18.236Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:50:18.236Z] [INFO] Processing job 44 (receipt) for Customer Receipt
+[2025-12-26T08:50:19.061Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T08:50:19.342Z] [INFO] ✓ Job 44 printed successfully
+[2025-12-26T08:50:44.328Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:50:44.329Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:50:44.330Z] [INFO] Processing job 45 (receipt) for Customer Receipt
+[2025-12-26T08:50:45.168Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T08:50:45.453Z] [INFO] ✓ Job 45 printed successfully
+[2025-12-26T08:55:09.387Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:55:09.388Z] [INFO] Found 1 pending job(s)
+[2025-12-26T08:55:09.388Z] [INFO] Processing job 46 (receipt) for Customer Receipt
+[2025-12-26T08:55:10.211Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T08:55:10.488Z] [INFO] ✓ Job 46 printed successfully
+[2025-12-26T09:52:51.782Z] [INFO] Found 2 pending job(s)
+[2025-12-26T09:52:51.783Z] [INFO] Found 2 pending job(s)
+[2025-12-26T09:52:51.785Z] [INFO] Processing job 47 (bar_ticket) for Bar Printer
+[2025-12-26T09:52:52.644Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T09:52:52.936Z] [INFO] ✓ Job 47 printed successfully
+[2025-12-26T09:52:52.937Z] [INFO] Processing job 48 (kot) for Kitchen Printer
+[2025-12-26T09:52:53.220Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T09:52:53.508Z] [INFO] ✓ Job 48 printed successfully
+[2025-12-26T10:10:27.328Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:10:29.321Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:10:57.447Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:10:59.472Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:11:01.464Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:11:03.476Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:11:04.798Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:11:05.486Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:11:07.490Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:11:09.489Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:11:11.505Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:11:13.525Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:11:15.534Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T10:11:27.714Z] [INFO] Print server shutting down...
+[2025-12-26T10:31:49.945Z] [INFO] Print server starting...
+[2025-12-26T10:31:49.947Z] [INFO] API: https://kamikuralk.online/api
+[2025-12-26T10:31:49.948Z] [INFO] Poll interval: 2000ms
+[2025-12-26T10:31:49.949Z] [INFO] Retry interval: 30000ms
+[2025-12-26T10:31:49.950Z] [INFO] ✓ Print server running. Press Ctrl+C to stop.
+[2025-12-26T10:31:50.930Z] [INFO] Found 1 pending job(s)
+[2025-12-26T10:31:50.931Z] [INFO] Found 1 pending job(s)
+[2025-12-26T10:31:50.932Z] [INFO] Processing job 49 (receipt) for Customer Receipt
+[2025-12-26T10:31:52.062Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T10:31:52.391Z] [INFO] ✓ Job 49 printed successfully
+[2025-12-26T10:54:57.156Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:02:00.768Z] [INFO] Found 1 pending job(s)
+[2025-12-26T11:02:00.769Z] [INFO] Found 1 pending job(s)
+[2025-12-26T11:02:00.769Z] [INFO] Processing job 50 (receipt) for Customer Receipt
+[2025-12-26T11:02:01.590Z] [INFO] Connecting to network printer: 192.168.123.70:9100
+[2025-12-26T11:02:01.866Z] [INFO] ✓ Job 50 printed successfully
+[2025-12-26T11:26:48.072Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:36:46.172Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:36:48.037Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:36:50.039Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:36:52.054Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:36:54.065Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:36:56.067Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:36:58.067Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:00.069Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:02.082Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:04.082Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:06.091Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:08.096Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:10.102Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:12.116Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:14.125Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:16.135Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:18.150Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:20.165Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:22.168Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:24.171Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:26.172Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:28.176Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:30.184Z] [ERROR] Failed to fetch pending jobs
+{
+  "error": "fetch failed"
+}
+[2025-12-26T11:37:30.655Z] [INFO] Print server shutting down...
