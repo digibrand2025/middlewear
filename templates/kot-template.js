@@ -1,15 +1,14 @@
 // KOT Template - Kitchen Order Ticket
-// Optimized for 80mm thermal printer (48 chars normal, 24 chars double-width)
+// Optimized for 80mm thermal printer
+// Features: Large 'Additional' banner, tall item names, no categories, ultra-clean footer.
 
 module.exports = {
     generate: function(orderData) {
         return function(printer) {
-            const WIDTH = 32;  // Safe width for double-size text
-            const SEPARATOR_THICK = '='.repeat(WIDTH);
+            const WIDTH = 32; 
             const SEPARATOR_THIN = '-'.repeat(WIDTH);
-            const SEPARATOR_STAR = '*'.repeat(WIDTH);
             
-            // Format order type for display
+            // Format order type
             const formatOrderType = (type) => {
                 const types = {
                     'dine_in': 'DINE IN',
@@ -21,7 +20,6 @@ module.exports = {
                 return types[type] || type?.toUpperCase() || 'DINE IN';
             };
             
-            // Get current time formatted
             const getTime = () => {
                 return new Date().toLocaleTimeString('en-GB', {
                     hour: '2-digit',
@@ -38,92 +36,65 @@ module.exports = {
                 .align('ct')
                 .style('b');
             
-            // ADDITIONAL ORDER banner (if applicable)
+            // LARGE ADDITIONAL BANNER
             if (orderData.is_additional) {
                 printer
-                    .size(2, 2)
-                    .text('')
-                    .text('** ADDITIONAL **')
+                    .size(2, 2) 
+                    .text('ADDITIONAL')
                     .size(1, 1)
-                    .text('');
+                    .text(SEPARATOR_THIN);
             }
             
-            // Main title - KITCHEN ORDER (big)
+            // Kitchen Order Title (Small)
             printer
-                .size(2, 2)
+                .size(1, 1) 
                 .text('KITCHEN ORDER')
-                .size(1, 1)
-                .text('');
+                .text(SEPARATOR_THIN);
             
-            // ==========================================
-            // ORDER TYPE - Prominently displayed
-            // ==========================================
+            // ORDER TYPE
             const orderType = formatOrderType(orderData.order_type);
+            printer
+                .style('b')
+                .size(orderData.order_type !== 'dine_in' ? 2 : 1, 2)
+                .text(orderType)
+                .size(1, 1)
+                .style('normal')
+                .text(''); 
+
+            // ==========================================
+            // ORDER INFO - Left Aligned
+            // ==========================================
+            printer.align('lt').style('b');
             
-            // Highlight non-dine-in orders more prominently
-            if (orderData.order_type && orderData.order_type !== 'dine_in') {
-                printer
-                    .style('b')
-                    .size(2, 2)
-                    .text('')
-                    .text(`>>> ${orderType} <<<`)
-                    .text('')
-                    .size(1, 1);
-            } else {
-                printer
-                    .style('b')
-                    .size(1, 2)
-                    .text(`[ ${orderType} ]`)
-                    .size(1, 1)
-                    .text('');
+            if (orderData.table) {
+                printer.size(2, 2).text(`TBL: ${orderData.table}`).size(1, 1);
             }
             
             printer
-                .style('normal')
-                .text(SEPARATOR_THICK);
-            
-            // ==========================================
-            // ORDER INFO
-            // ==========================================
-            printer
-                .align('lt')
-                .style('b')
-                .size(1, 2);
-            
-            // Table number - BIG
-            printer
-                .text(`TABLE: ${orderData.table || 'N/A'}`);
-            
-            printer
-                .size(1, 1)
-                .style('normal')
                 .text(`Server : ${orderData.server || 'N/A'}`)
                 .text(`Time   : ${orderData.time || getTime()}`)
-                .text(`Order  : #${orderData.sale_id || 'N/A'}`)
-                .text(SEPARATOR_THICK)
-                .text('');
-            
+                .style('normal')
+                .text(''); 
+
             // ==========================================
-            // ORDER NOTES (if any)
+            // SPECIAL NOTES
             // ==========================================
             if (orderData.notes && orderData.notes.trim() !== '') {
                 printer
                     .style('b')
                     .align('ct')
-                    .size(1, 2)
-                    .text('*** SPECIAL NOTES ***')
-                    .size(1, 1)
+                    .invert(true)
+                    .text(' SPECIAL NOTES ')
+                    .invert(false)
                     .align('lt')
-                    .style('normal')
-                    .text('');
-                
-                // Word wrap notes
+                    .size(1, 2); 
+
                 const notes = orderData.notes.trim();
                 const words = notes.split(' ');
                 let line = '';
                 
                 words.forEach(word => {
-                    if ((line + ' ' + word).trim().length <= WIDTH) {
+                    if ((line + ' ' + word).trim().length <= (WIDTH / 1.5)) { 
                         line = (line + ' ' + word).trim();
                     } else {
                         if (line) printer.text(line);
@@ -133,92 +104,41 @@ module.exports = {
                 if (line) printer.text(line);
                 
                 printer
-                    .text('')
-                    .text(SEPARATOR_STAR)
-                    .text('');
+                    .size(1, 1)
+                    .style('normal')
+                    .text(''); 
             }
             
             // ==========================================
-            // ITEMS - Grouped by category
+            // ITEMS (Flat List - Category Removed)
             // ==========================================
-            printer
-                .align('ct')
-                .style('b')
-                .size(1, 1)
-                .text('ITEMS')
-                .text(SEPARATOR_THIN)
-                .align('lt')
-                .text('');
+            printer.text(''); // Space before items
             
-            // Group items by category
-            const itemsByCategory = {};
             (orderData.items || []).forEach(item => {
-                const cat = item.category || 'Other';
-                if (!itemsByCategory[cat]) {
-                    itemsByCategory[cat] = [];
-                }
-                itemsByCategory[cat].push(item);
-            });
-            
-            // Print items by category
-            Object.keys(itemsByCategory).forEach(category => {
-                // Category header
+                // Item Name: Tall but NOT bold
                 printer
-                    .style('b')
-                    .size(1, 1)
-                    .text(`-- ${category.toUpperCase()} --`)
-                    .style('normal');
+                    .align('lt')
+                    .size(1, 2)
+                    .text(`${item.quantity} x ${item.item_name}`);
                 
-                // Items in category
-                itemsByCategory[category].forEach(item => {
-                    // Item line with quantity - BIGGER
+                // Item Modifiers
+                if (item.notes && item.notes.trim() !== '') {
                     printer
+                        .size(1, 1)
                         .style('b')
-                        .size(1, 2)
-                        .text(`${item.quantity}x ${item.item_name}`);
-                    
-                    // Item-level notes (if any)
-                    if (item.notes && item.notes.trim() !== '') {
-                        printer
-                            .size(1, 1)
-                            .style('normal')
-                            .text(`   >> ${item.notes.trim()}`);
-                    }
-                    
-                    printer.size(1, 1);
-                });
-                
-                printer.text('');
+                        .text(`   >> ${item.notes.trim()}`)
+                        .style('normal');
+                }
             });
+
+            // Separator line after all items
+            printer.text('').text(SEPARATOR_THIN);
             
             // ==========================================
-            // FOOTER
+            // FOOTER - Clean Cut
             // ==========================================
             printer
-                .text(SEPARATOR_THICK)
-                .align('ct')
-                .style('b')
-                .size(1, 2)
-                .text(`ORDER #${orderData.sale_id}`)
-                .size(1, 1)
-                .style('normal')
-                .text(SEPARATOR_THICK);
-            
-            // Timestamp at bottom
-            printer
-                .align('ct')
-                .text('')
-                .text(new Date().toLocaleString('en-GB', {
-                    day: '2-digit',
-                    month: '2-digit',
-                    year: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    second: '2-digit',
-                    hour12: true
-                }))
-                .text('')
-                .text('')
+                .text('.') 
                 .cut();
         };
     }

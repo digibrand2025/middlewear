@@ -1,5 +1,7 @@
 @echo off
 title Kamikura Print Server
+
+reg add HKCU\Console /v Quickedit /t RED_DWORD /d 0 /f >null 2>&1
 echo ========================================
 echo  KAMIKURA PRINT SERVER
 echo ========================================
